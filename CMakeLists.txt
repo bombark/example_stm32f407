@@ -81,3 +81,8 @@ add_custom_target (firmware.bin
   COMMAND arm-none-eabi-objcopy -O binary firmware.elf firmware.bin
 )
 add_custom_target(bin ALL DEPENDS firmware.bin)
+
+add_custom_target (flash
+  DEPENDS firmware.bin
+  COMMAND st-flash write firmware.bin 0x08000000
+)
