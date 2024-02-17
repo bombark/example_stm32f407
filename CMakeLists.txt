@@ -63,8 +63,12 @@ add_executable(firmware.elf
     ./stm32cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
     ./stm32cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
     ./stm32cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c
+    ./stm32cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c
+    ./stm32cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c
 
     ## project
+    ./src/cs43l22.c
+    ./src/audio.c
     ./src/btn_blue.c
     ./src/led_orange.c
     ./src/speaker.c
